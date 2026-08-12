@@ -1,0 +1,327 @@
+.body{
+
+margin: 0;
+    font-family: Arial;
+    color: rgb(2, 2, 2);
+    font-size: 20px;
+
+}
+.contenedor1{  
+   display: grid;
+    grid-template-areas: 
+    "imagenHS"
+     "header"
+     "main "
+     "footer";
+     grid-template-rows: auto auto  1fr auto ;
+    height: 100vh ;
+   
+
+ 
+}
+
+
+.contenedor1 header {
+  grid-area: header;
+  background-color: rgb(201, 235, 245);
+  padding: 20px;
+  font-size: 28px;
+backdrop-filter: rgb(197, 197, 231);
+
+}
+
+
+span{ color: #050505;}
+
+a{color: #050505;}
+
+
+.contenedor1 .tooltip {
+  position:relative;
+
+
+}
+
+.contenedor1 .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+
+  color: #050505;
+  text-align: center;
+  border-radius: 2px;
+  padding: 3px ;
+  position: absolute;
+  z-index: 1;
+  font-size: 12px;
+
+}
+
+
+.contenedor1 .tooltip:hover  .tooltiptext {
+  visibility: visible;
+}
+
+
+nav {
+
+    display: flex;
+    gap: 80px; 
+    padding: 8px;
+  
+}
+
+.contenedor1 .barra-izquierda{
+ display: flex;   
+ gap: 80px;
+   align-items: center;
+}
+
+.contenedor1 .barra-derecha{
+ justify-content: space-between;
+   align-items: center;
+ gap: 200px ;
+ column-gap: 50px;
+    margin-left:  20px;
+
+}
+
+main{
+  grid-area: main;
+}
+
+
+
+
+ 
+
+
+.contenedor1 footer{
+    grid-area: footer;
+    background-color:rgb(96, 183, 209);
+    padding:25px;
+
+}
+
+
+
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+  
+.contenedor2 header {
+ display: flex;
+     justify-content: center; 
+      font-size: 70px;
+ grid-area: header;
+  background-color: rgb(96, 183, 209);
+  padding: 70px;
+ 
+
+      
+
+}
+
+
+.salir{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+
+}
+
+.salir1{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+
+.contenedor2 header div{
+ font-size: 70px;
+  margin-top:0%;
+
+
+}
+
+
+
+.contenedor2 main{
+    display: flex;  
+justify-content: left; align-items: center;
+
+ }
+
+
+
+.nuevotraslado{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.button {
+  position:fixed;
+  text-align: left;
+  padding: 15px;
+  font-size: 20px;
+ border-radius: 12%;
+ border:none;
+bottom: 0%;
+left: 0%;
+ 
+
+}
+
+
+
+.buttonmas{
+font-size: 20px;   
+
+
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  
+  color: #050505;
+  text-align: center;
+  border-radius: 2px;
+  padding: 3px ;
+  position: absolute;
+  z-index: 1;
+  font-size: 12px;
+
+}
+
+
+.buttonmas:hover + .tooltiptext {
+  visibility: visible;
+}
+
+
+
+
+.body2 {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 320vh;
+margin: 0;
+font-family: Arial;
+color: rgb(2, 2, 2);
+font-size: 20px;
+
+
+}
+
+ .Contenedor3{
+ display: grid;
+ max-width: 600px;
+ width: 100%;
+
+
+
+}
+
+
+
+textarea{
+resize: none;
+color: #050505;
+
+}
+
+
+
+
+ .Contenedor3 header{
+    display: flex;
+background-color: rgb(96, 183, 209);
+  padding: 20px;
+  font-size: 20px;
+  align-items: center;
+  border-radius: 20px;
+
+}
+
+.Contenedor3 main {
+background:rgb(96, 183, 209);
+width: 500px;
+align-items: center;
+border-radius: 30px;
+flex-direction: column;
+padding: 20px;
+display:flex;
+margin-bottom: 20px; 
+
+}
+
+
+
+button[type="submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: #2691d9;
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+
+}
+
+
+
+input {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 10px; /*bordes redondeados*/
+}
+
+
+
+ select{
+  width: 100%;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 10px; /*bordes redondeados*/
+  
+}
+
+
+
+.Contenedor3
+ .fold-oculto{
+display: none;
+
+}
+
+.Contenedor3 .fold-visible{
+  display: block;
+}
+
+
+.botonvolver {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 60px;
+  color: black;
+  text-decoration: none;
+
+}
