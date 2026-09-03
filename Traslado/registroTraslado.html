@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../FuncionarioPC.css">
+</head>   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+<body class="body2">
+  
+
+<form class="Contenedor3">
+
+<main>
+
+ <header>
+       <section class="volver">
+        <span class="boton"> 
+               <a href="#" class="salir" id="volver2"> <i class="fa-solid fa-arrow-left"></i></a>
+          <span class="tooltiptext"> volver </span>  
+        </span>  </section>
+    </header>
+
+      <h1> Registrar Traslado </h1>
+
+<p> Elemento a trasladar:</p>
+
+<br>
+<div class="fold">
+  <select id="Trasladar" name="elemento" required>
+    <option value=""> Seleccione  </option> 
+    <option value="persona"> Paciente</option>
+    <option value="muestra"> Muestra </option> 
+    <option value="equipamiento" > Equipamiento</option>
+    <option value="insumos"> Insumos</option>
+  </select> 
+
+
+
+<div class="selector2">
+<div id="fold-muestra" class="fold-oculto">
+  <label for="tipo"> </label>
+  <br><br>
+  <input type="text" id="nombremuestra" placeholder="nombre">
+  <br><br>
+  <input type="text" id="regfrigeracion" placeholder="¿Necesita refrigeración?">
+</div>
+
+<br>
+
+<div id="fold-equipamiento" class="fold-oculto">
+  <label for="tipo2"> </label>
+  <input type='text' id='n_serie' placeholder="Ingrese n_serie">
+  <br><br>
+  <input type="text" id="descripcionquipamiento" placeholder="Descripción"> 
+</div>
+
+<br>
+
+<div  id="fold-insumos"  class="fold-oculto">
+<label  for="tipo3"></label>
+
+
+<input type="text" id="nombreinsumo" placeholder="Ingrese nombre del insumo">
+<br> <br>
+
+<input type="text"  id="descripcioninsumo" placeholder="Descripción">
+
+
+</div>
+</div>
+
+
+
+
+
+<p>Conductor:</p>
+
+<br>
+
+ <input type="text" name="nombre" id="nombre_conductor"  placeholder="Ingrese su nombre" required>
+
+ <br> <br>
+             
+ <input type="number" name="C.I"  id="C.I"  placeholder="Ingrese su cédula" required>
+
+<br>
+
+<p> Acompañante:</p>
+
+<select id="relacion" name="R"required>
+
+<option value="Copiloto">Copiloto</option>  
+
+<option value="Acompañante">Acompañante</option>
+
+</select>
+
+<br> <br>
+
+<input type="text" name="nombre_acompanante" id="nombre"  placeholder="Ingrese su nombre" required>
+
+<br> <br>
+
+<input type="number" name="C.I" id="C.I" placeholder="Ingrese su cédula" required>
+
+<p> Ambulancia: </p>
+    
+
+<textarea  type="text"  name="modelo" id="" cols="25" rows="5" placeholder="Ingrese un modelo:" required> </textarea>
+
+<br> 
+
+<p> Matricula </p>
+
+<textarea  type="text" name="Matricula" id="" cols="25" rows="5" placeholder="Ingrese una matricula:" required> </textarea>
+
+
+<p> Origen: </p>
+
+<br>
+
+<input type="text" id="descripcionorigen" placeholder="Descripción" required>
+
+<br><br>
+
+<input type="date" id="" placeholder="fecha" required > 
+
+<br><br>
+
+<input type="time" id="" placeholder="hora" required >
+
+<br>
+
+
+<p> Destino: </p>
+
+<br>
+
+<input type="text" id="Descripciondestino" placeholder="Descripción" required >
+
+<br><br>
+
+<input type="date" id="" placeholder="fecha" required>
+
+<br><br>
+
+<input type="time" id="" placeholder="hora" required>
+ 
+
+<p>  Ruta: </p>
+
+<select id="Ruta" name="Rut" required>
+
+<option value="Urbano"> Urbano </option>
+
+<option value="Carretera"> Carretera </option>
+
+<option value="Internacional"> Internacional </option>
+
+
+</select>
+
+
+
+<br> <br> <br>
+
+<button type="submit"> Registrar traslado </button>
+
+</main> 
+
+    
+
+
+
+</form>
+<script src="Funcionario.js"></script>
+<script src="/Traslado/volver.js"></script>
+</body>
+</html>
