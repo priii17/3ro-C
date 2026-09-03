@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Funcionario</title>
+    <link rel="stylesheet" href="../css/logins.css" />
+  </head>
+
+  <body>
+    <div class="formulario" id="registro">
+      <img src="../img/logohosp.png" />
+      <h1>Registrarse</h1>
+      <form method="post">
+        <div class="campo-nombre">
+          <label>Nombre completo</label>
+          <input type="text" required />
+        </div>
+
+        <div class="campo-telefono">
+          <label>Telefono</label>
+          <input type="text" required />
+        </div>
+
+        <div class="campo-email">
+          <label>Gmail</label>
+          <input type="email" required />
+        </div>
+
+        <div class="campo-cedula">
+          <label>Cédula de Identidad</label>
+          <input type="text" required />
+        </div>
+
+        <div class="campo-nacimiento">
+          <label>Fecha de Nacimiento</label>
+          <input type="date" required />
+        </div>
+
+        <div class="campo-contraseña">
+          <label>Contraseña</label>
+          <input type="password" required />
+        </div>
+
+        <div class="campo-contraseña">
+          <label>Confirmar contraseña</label>
+          <input type="password" required />
+        </div>
+        <div class="campo-codigo">
+          <label>Código de Verificación</label>
+          <input type="number" required />
+        </div>
+        <input type="submit" value="Registrarse" />
+        <div class="Iniciar Sesión">¿Ya tienes una cuenta? <a href="login.html">Iniciar Sesión</a></div>
+      </form>
+    </div>
+    <script src="../js/registro.js"></script>
+  </body>
+</html>

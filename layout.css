@@ -1,0 +1,55 @@
+body{
+    
+margin: 0;
+    font-family: Arial;
+    color: rgb(2, 2, 2);
+    font-size: 20px;
+
+
+.contenedor { 
+   display: grid;
+    grid-template-areas: 
+  "header header"
+  "main aside"
+  "footer footer";
+
+grid-template-columns: 3fr 2fr ;
+ grid-template-rows: 
+  200px
+  500px 
+  150px
+  500px;
+
+ 
+  height: 100vh;
+ gap: 10px;
+ 
+
+}
+ 
+header {
+  grid-area: header;
+  background-color: darkgoldenrod;
+  padding: 19px;
+}
+
+
+main{
+    grid-area: main;
+    background-color: darkorange;
+    padding: 22px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: goldenrod;
+    padding: 22px;
+
+}
+
+footer{
+    grid-area: footer;
+    background-color:gold;
+    padding: 19px;
+}
+}

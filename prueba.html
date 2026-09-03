@@ -1,0 +1,44 @@
+<!-- HERO SECTION -->
+<div class="hero-section">
+    <div class="container">
+        <img src="img/elyralogo.png" alt="Elyra" height="90">
+        <h1>Hospital de Clínicas</h1>
+        <p class="lead">Sistema de gestión hospitalaria — Elyra</p>
+        <div class="d-flex justify-content-center gap-3" style="margin-top:16px;">
+            <a href="login" class="btn btn-primary btn-lg" style="font-size:14px;padding:8px 24px;">
+                <i class="bi bi-person-badge"></i> Acceso al sistema
+            </a>
+            <a href="#noticias-semana" class="btn btn-lg" style="font-size:14px;padding:8px 24px;background:rgba(255,255,255,0.12);color:#fff;border-color:rgba(255,255,255,0.3);">
+                <i class="bi bi-newspaper"></i> Noticias
+            </a>
+        </div>
+    </div>
+</div>
+.hero-section {
+    background: url('img/hospital-de-clinicas.jpg') center/cover no-repeat;
+    padding: 140px 0;
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px solid #2A4780;
+    position: relative;
+}
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+.hero-section h1 {
+    font-size: 44px;
+    font-weight: bold;
+    margin: 14px 0;
+}
+.hero-section .lead {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #CCD9F0;
+}

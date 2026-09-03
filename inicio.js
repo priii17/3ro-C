@@ -1,32 +1,9 @@
   
-  const  traslados = document.getElementById('traslados')
+  const  traslado = document.getElementById('traslado')
 
- traslados.addEventListener('click', () => {
-
- window.location.href='../Traslado/Traslado.html'
+ traslado.addEventListener('click', () => {
+ window.location.href='../trabajo/Traslado/registroTraslado.html'
 
   
   } )
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

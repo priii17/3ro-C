@@ -15,7 +15,8 @@ margin: 0;
      "footer";
      grid-template-rows: auto auto  1fr auto ;
     height: 100vh ;
-   
+
+
 
  
 }
@@ -70,13 +71,13 @@ nav {
   
 }
 
-.contenedor1 .barra-izquierda{
+ .barra-izquierda{
  display: flex;   
  gap: 80px;
    align-items: center;
 }
 
-.contenedor1 .barra-derecha{
+.barra-derecha{
  justify-content: space-between;
    align-items: center;
  gap: 200px ;
@@ -97,8 +98,9 @@ main{
 
 .contenedor1 footer{
     grid-area: footer;
-    background-color:rgb(96, 183, 209);
+      background-color: rgb(201, 235, 245);
     padding:25px;
+
 
 }
 
@@ -111,13 +113,15 @@ main{
    
 }
   
-.contenedor2 header {
+.header {
  display: flex;
-     justify-content: center; 
-      font-size: 70px;
+justify-content: space-between; 
+font-size: 30px;
  grid-area: header;
-  background-color: rgb(96, 183, 209);
-  padding: 70px;
+  background-color: rgb(201, 235, 245);
+  padding: 50px;
+  gap: 20px;
+  space
  
 
       
@@ -145,9 +149,8 @@ main{
 }
 
 
-.contenedor2 header div{
+.contenedor2 .header div{
  font-size: 70px;
-  margin-top:0%;
 
 
 }
@@ -211,6 +214,9 @@ font-size: 20px;
 
 
 
+
+/*  CSS DE registroT*/
+
 .body2 {
 display: flex;
 justify-content: center;
@@ -225,10 +231,12 @@ font-size: 20px;
 }
 
  .Contenedor3{
- display: grid;
+
  max-width: 600px;
  width: 100%;
-
+  display: flow-root;
+  
+ 
 
 
 }
@@ -246,23 +254,28 @@ color: #050505;
 
  .Contenedor3 header{
     display: flex;
-background-color: rgb(96, 183, 209);
   padding: 20px;
   font-size: 20px;
   align-items: center;
-  border-radius: 20px;
+  border: 0%;
+
+  
+ 
 
 }
 
 .Contenedor3 main {
-background:rgb(96, 183, 209);
+background-color: rgb(201, 235, 245);
+backdrop-filter: rgb(197, 197, 231);
 width: 500px;
 align-items: center;
-border-radius: 30px;
+border-radius: 50px;
 flex-direction: column;
-padding: 20px;
+padding: 30px;
 display:flex;
-margin-bottom: 20px; 
+margin-top: 20px;
+margin-bottom: 10px;
+
 
 }
 
@@ -325,3 +338,21 @@ display: none;
   text-decoration: none;
 
 }
+
+
+
+
+.Contenedor3 {
+ #fold-muestra,
+ #fold-euipamiento,
+ #fold-insumos,
+ #nombremuestra,
+ #n_serie,
+ #descripcionquipamiento,
+ #nombreinsumo,
+ #descripcioninsumo{
+ 
+display: hidden;}
+
+}
+
