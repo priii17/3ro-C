@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subir documento</title>
+    <link rel="stylesheet" href="../css/documento.css" />
+    <script src="https://kit.fontawesome.com/e5a1affeb5.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="body2">
+    <div class="contenedor1">
+      <header>
+        <nav>
+          <div class="barra-izquierda">
+            <a href="#Inicio" class="tooltip">
+              <span id="inicio"> <i class="fa-solid fa-house"> </i> </span> <span class="tooltiptext"> Inicio </span>
+            </a>
+
+            <a href="#Documentos" class="tooltip"> <span id="carpeta"> Documentos </span> </a>
+            <a href="#Traslados" class="tooltip"> <span id="traslados"> Traslados </span></a>
+
+            <a href="#Encuestas" class="tooltip"> <span id="encuestas"> Encuestas</span> </a>
+
+            <a href="#Crear" class="tooltip"> <span id="crear"> Crear </span> </a>
+
+            <a href="#Ayuda" class="tooltip"> <span id="ayuda"> Ayuda</span> </a>
+          </div>
+
+          <div class="barra-derecha">
+            <a href="#Perfil" class="tooltip">
+              <span id="perfil"> <i class="fa-solid fa-circle-user"></i></span> <span class="tooltiptext"> Perfil </span></a
+            >
+            <a href="#logo"></a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="formulario">
+          <form method="post">
+            <span class="icono-doc"><i class="fa-regular fa-folder-closed"></i></span>
+
+            <h2>Subir documento</h2>
+
+            <div class="campo">
+              <label>Emisor</label>
+              <input type="text" placeholder="Nombre funcionario administrativo..." required />
+              <span class="icono"><i class="fa-solid fa-user-doctor"></i></span>
+            </div>
+
+            <div class="campo">
+              <label>Receptor</label>
+              <input type="text" placeholder="Nombre paciente..." required />
+              <span class="icono"><i class="fa-solid fa-user"></i></span>
+            </div>
+
+            <div class="tipodocumento">
+              <label for="lang"><i class="fa-solid fa-file-medical"></i>Tipo de documento: </label>
+              <br />
+              <select name="tipo" id="lang">
+                <option value="selecciona">Selecciona una opcion</option>
+                <option value="opcion1">Indicaciones de interrupción voluntaria del embarazo</option>
+                <option value="opcion2">Prostatectomía radical (indicaciones e información para el paciente).</option>
+                <option value="opcion3">Preparación para estudios imagenológicos</option>
+                <option value="opcion4">Estudios diagnósticos con pertecneciato</option>
+                <option value="opcion5">Centellograma de perfusión miocárdica</option>
+                <option value="opcion6">Indicaciones ecocardiograma con dobutamina</option>
+                <option value="opcion7">Indicaciones para pacientes en tratamiento con warfarina</option>
+                <option value="opcion8">Indicaciones para ingreso a centro de nefrología y trasplante</option>
+                <option value="opcion9">Plan de alta enfermería, Nefrología</option>
+                <option value="opcion10">Indicaciones de enfermería para usuarios trasplantados</option>
+                <option value="opcion11">Prevención de infecciones</option>
+                <option value="opcion12">Encuesta de satisfacción del usuario trasplantado</option>
+                <option value="opcion13">Pauta para pacientes ostomizados</option>
+              </select>
+            </div>
+
+            <div class="cargar">
+              <label><i class="fa-solid fa-file-arrow-up"></i>Cargar archivo</label>
+              <input type="text" id="nombre" name="nombre" />
+              <input type="file" id="archivo" name="archivo" />
+              <input type="submit" value="Subir" id="btn" />
+              <div id="mensaje"></div>
+            </div>
+            <div class="generarqr">
+              <i class="fa-solid fa-qrcode"></i>
+              <button>Generar QR</button>
+            </div>
+
+            <div class="boton">
+              <input type="reset" value="Eliminar" />
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer>
+        Tel: 2487 1515 Dirección: Av. Italia s/n - Montevideo Código, 11600
+        <br />
+        <p id="derechos">&copy; 2026 Bytech - Todos los derechos reservados</p>
+      </footer>
+    </div>
+    <script src="../js/enviar.js"></script>
+  </body>
+</html>
