@@ -28,9 +28,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `ambulancia` (
-  `id` int(11) NOT NULL,
-  `modelo` varchar(255) NOT NULL,
-  `matricula` varchar(10) NOT NULL
+ id int(11) NOT NULL AUTO_INCREMENT,
+  modelo varchar(255) NOT NULL,
+  matricula varchar(10) NOT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY matricula (matricula)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
