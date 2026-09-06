@@ -223,8 +223,8 @@ CREATE TABLE `tipo` (
 
 CREATE TABLE `traslado` (
   `id` int(11) NOT NULL,
-  `fecha` time(6) NOT NULL,
-  `hora` date NOT NULL,
+  `fecha` date(6) NOT NULL,
+  `hora` time NOT NULL,
   `salida` varchar(200) NOT NULL,
   `llegada` varchar(200) NOT NULL,
   `estado` varchar(255) NOT NULL,
